@@ -1,0 +1,41 @@
+@import "variables";
+.homeHeader {
+    background-image: $homeHeader;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.homeHeader img {
+    position: absolute;
+    right: 0;
+    bottom: -200px;
+}
+
+.homeHeader h1 {
+    float: left;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gallery {
+    background: $frenchBlue;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.gallery ul {
+    margin: 0 40px;
+}
+
+.gallery li {
+    float: left;
+    width: calc((100% - 40px)/3);
+}
+
+.gallery li:first-child {
+    margin-left: 20px;
+}

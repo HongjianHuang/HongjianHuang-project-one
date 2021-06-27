@@ -268,3 +268,97 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.homeHeader {
+  background-image: url("../funplaceAssets/homeHeader.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.homeHeader img {
+  position: absolute;
+  right: 0;
+  bottom: -200px;
+}
+
+.homeHeader h1 {
+  float: left;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.gallery {
+  background: #474BB5;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.gallery ul {
+  margin: 0 40px;
+}
+
+.gallery li {
+  float: left;
+  width: calc((100% - 40px)/3);
+}
+
+.gallery li:first-child {
+  margin-left: 20px;
+}
+
+body {
+  color: white;
+  font-size: 20px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header,
+section {
+  padding: 50px 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 7.26rem;
+  width: 400px;
+  font-weight: 400;
+  float: left;
+}
+
+footer {
+  background-color: #044779;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
