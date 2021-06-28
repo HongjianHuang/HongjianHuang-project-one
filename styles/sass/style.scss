@@ -6,8 +6,10 @@ body {
     font-size: 20px;
 }
 
-header {
+header .wrapper {
     display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 header,
@@ -31,6 +33,20 @@ h1 {
     width: 400px;
     font-weight: 400;
     float: left;
+}
+
+nav {
+    float: left;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
 }
 
 footer {

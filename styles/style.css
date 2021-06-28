@@ -314,15 +314,40 @@ html {
   margin-left: 20px;
 }
 
+.nav {
+  background: #03697C;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav ul {
+  margin-top: 200px;
+  height: 100%;
+}
+
+.nav li {
+  float: left;
+  width: calc((100% - 40px)/2);
+}
+
+.nav li:nth-child(odd) {
+  margin-left: 20px;
+}
+
 body {
   color: white;
   font-size: 20px;
 }
 
-header {
+header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 header,
@@ -346,6 +371,20 @@ h1 {
   width: 400px;
   font-weight: 400;
   float: left;
+}
+
+nav {
+  float: left;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
 }
 
 footer {

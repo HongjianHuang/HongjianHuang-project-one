@@ -39,3 +39,23 @@
 .gallery li:first-child {
     margin-left: 20px;
 }
+
+.nav {
+    background: $deepTurquoise;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav ul {
+    margin-top: 200px;
+    height: 100%;
+}
+
+.nav li {
+    float: left;
+    width: calc((100% - 40px)/2);
+}
+
+.nav li:nth-child(odd) {
+    margin-left: 20px;
+}
