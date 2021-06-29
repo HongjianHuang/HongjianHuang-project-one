@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Hongjian's Fun Place</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800|Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="blogHeader">
         <div class="wrapper clearfix">
             <nav>
                 <ul>
@@ -23,34 +25,36 @@
             <img src="" alt="">
         </div>
     </header>
-    <main>
+    <main class="blogMain">
         <div class="mission">
             <img src="" alt="">
-            <div>
+            <div class="wrapper">
                 <h3>O<span>UR MIISSION</span></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est esse repudiandae maxime minima similique delectus rerum culpa autem quis odio nihil ipsa nemo, itaque recusandae eaque animi commodi illum ipsam?</p>
+                <div>
+                    <h3>R<span>CENT</span>P<span>OSTS</span></h3>
+                    <ul>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h3>R<span>CENT</span>P<span>OSTS</span></h3>
-                <ul>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                </ul>
-            </div>
+
         </div>
+        <img id="blogPostImage" src="funplaceAssets/blogPostImage.jpg" alt="blogPostImage">
         <div class="post">
-            <img src="" alt="">
-            <div class="postContent">
+
+            <div class="postContent wrapper">
                 <h2>N<span>EW ACTIVITES</span></h2>
                 <p class="date">Monday January 30, 2019 by Saron</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est officia libero quod facilis accusantium, a modi minima tenetur animi nobis nam deleniti corrupti, aliquid rerum. Enim eaque minima provident eum.</p>
@@ -60,32 +64,31 @@
                 </p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quos voluptates sint sapiente natus optio vitae consectetur velit reprehenderit nesciunt possimus neque praesentium maxime voluptatem a doloribus delectus dicta officia!</p>
             </div>
-        </div>
-        <div class="comments">
-            <h2>C<span>OMMENTS</span></h2>
+            <div class="comments wrapper">
+                <h2>C<span>OMMENTS</span></h2>
 
-            <div>
-                <img src="" alt="">
-                <h4>Tuesday October 9th, 2019 by Mariama</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ab aliquam earum mollitia saepe architecto corrupti dolor libero vitae temporibus odit ducimus excepturi voluptate, asperiores optio quidem tempora placeat facilis?</p>
+                <div>
+                    <img src="" alt="">
+                    <h4>Tuesday October 9th, 2019 by Mariama</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ab aliquam earum mollitia saepe architecto corrupti dolor libero vitae temporibus odit ducimus excepturi voluptate, asperiores optio quidem tempora placeat facilis?</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h4>Tuesday October 10th, 2019 by Rob</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aliquam consectetur sed cupiditate natus facere, consequatur quae quaerat voluptate earum cum esse similique quam sunt incidunt tempore! Excepturi, nihil libero!</p>
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="emial" placeholder="Emial">
+                    <textarea name="specialInstructions" id="specialInstructions" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <button type="submit">POST Comment</button>
+                </form>
+
             </div>
-            <div>
-                <img src="" alt="">
-                <h4>Tuesday October 10th, 2019 by Rob</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aliquam consectetur sed cupiditate natus facere, consequatur quae quaerat voluptate earum cum esse similique quam sunt incidunt tempore! Excepturi, nihil libero!</p>
-            </div>
-
-            <form action="">
-                <input type="text" placeholder="Name">
-                <input type="emial" placeholder="Emial">
-                <textarea name="specialInstructions" id="specialInstructions" cols="30" rows="10" placeholder="Comment"></textarea>
-                <button type="submit">POST Comment</button>
-            </form>
-
         </div>
-        <div>
 
-        </div>
+
     </main>
     <footer>
         <p>Copyright © 2019 HackerYou</p>

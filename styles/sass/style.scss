@@ -1,15 +1,32 @@
 @import "setup";
 @import "variables";
 @import "home";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import "blog";
 body {
     color: white;
     font-size: 20px;
+    font-family: 'Walter Turncoat', cursive;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 100px auto;
+}
+
+span {
+    font-size: 0.7em;
+}
+
+p {
+    margin-bottom: 50px;
 }
 
 header .wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin-top: 0;
 }
 
 header,
@@ -35,6 +52,14 @@ h1 {
     float: left;
 }
 
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
 nav {
     float: left;
 }
@@ -53,13 +78,9 @@ footer {
     background-color: $darkishBlue;
     text-align: center;
     padding: 10px 0;
+    font-family: none;
 }
 
 footer p {
     margin: 0;
-}
-
-.wrapper {
-    width: 80%;
-    margin: 0 auto;
 }

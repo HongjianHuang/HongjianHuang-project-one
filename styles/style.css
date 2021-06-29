@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -269,11 +270,15 @@ html {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .homeHeader {
   background-image: url("../funplaceAssets/homeHeader.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 70vh;
   position: relative;
 }
 
@@ -294,8 +299,18 @@ html {
           align-items: flex-end;
 }
 
-.gallery {
+.gallery,
+.intro {
   background: #474BB5;
+}
+
+.nav,
+.roadTrips,
+.events {
+  background: #03697C;
+}
+
+.gallery {
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -303,11 +318,22 @@ html {
 
 .gallery ul {
   margin: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .gallery li {
   float: left;
   width: calc((100% - 40px)/3);
+  margin-right: 40px;
+}
+
+.gallery li:last-child {
+  margin-right: 0;
 }
 
 .gallery li:first-child {
@@ -315,28 +341,212 @@ html {
 }
 
 .nav {
-  background: #03697C;
   background-size: cover;
   background-position: center;
 }
 
+.nav a {
+  font-size: 2.25rem;
+  color: white;
+}
+
 .nav ul {
   margin-top: 200px;
+  margin-bottom: 100px;
   height: 100%;
 }
 
 .nav li {
   float: left;
-  width: calc((100% - 40px)/2);
+  width: calc((100% - 140px)/2);
+  list-style: none;
+  position: relative;
 }
 
 .nav li:nth-child(odd) {
-  margin-left: 20px;
+  margin-right: 80px;
+}
+
+.nav i {
+  font-size: 1.5rem;
+  color: #044779;
+  background: #08FDED;
+  border-radius: 100%;
+  padding: 15px;
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.nav p {
+  margin-left: 80px;
+}
+
+.intro {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.intro section {
+  float: left;
+  width: 100%;
+}
+
+#imgRight,
+#imgLeft {
+  position: absolute;
+  width: 40%;
+}
+
+#imgRight {
+  bottom: -50px;
+  right: 0px;
+  -webkit-box-shadow: -35px -35px 0 -15px #08FDED;
+          box-shadow: -35px -35px 0 -15px #08FDED;
+}
+
+#imgLeft {
+  top: -50px;
+  left: 0;
+  -webkit-box-shadow: 35px 35px 0 -15px #08FDED;
+          box-shadow: 35px 35px 0 -15px #08FDED;
+}
+
+.textRight,
+.textLeft {
+  width: 40%;
+}
+
+.textLeft {
+  float: left;
+  text-align: right;
+}
+
+.textRight {
+  float: right;
+  text-align: left;
+}
+
+.readMore {
+  background: #08FDED;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #044779;
+}
+
+.roadTrips {
+  text-align: center;
+}
+
+.events {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 1px;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+}
+
+.eventImg {
+  float: left;
+  width: 40%;
+}
+
+.eventImg img {
+  -webkit-box-shadow: -20px 20px #08FDED;
+          box-shadow: -20px 20px #08FDED;
+}
+
+.eventText {
+  float: right;
+  width: 60%;
+}
+
+.eventText h3 {
+  margin-top: 0;
+}
+
+.blogHeader {
+  background-image: url("../funplaceAssets/blogHeader.jpg");
+}
+
+.blogMain {
+  background: #03697C;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 40px;
+}
+
+.blogMain .wrapper {
+  position: relative;
+}
+
+.post {
+  margin-top: 300px;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#blogPostImage {
+  width: 60%;
+  position: absolute;
+  top: 200px;
+  z-index: 1;
+  right: 0;
+  -webkit-box-shadow: -10px 10px #08FDED;
+          box-shadow: -10px 10px #08FDED;
+}
+
+.postContent {
+  position: relative;
+  float: right;
+}
+
+.postContent::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -200px;
+  bottom: -100px;
+  left: -62px;
+  border: 2px solid #08FDED;
 }
 
 body {
   color: white;
   font-size: 20px;
+  font-family: "Walter Turncoat", cursive;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 100px auto;
+}
+
+span {
+  font-size: 0.7em;
+}
+
+p {
+  margin-bottom: 50px;
 }
 
 header .wrapper {
@@ -348,6 +558,7 @@ header .wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  margin-top: 0;
 }
 
 header,
@@ -373,6 +584,14 @@ h1 {
   float: left;
 }
 
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
 nav {
   float: left;
 }
@@ -391,13 +610,9 @@ footer {
   background-color: #044779;
   text-align: center;
   padding: 10px 0;
+  font-family: none;
 }
 
 footer p {
   margin: 0;
-}
-
-.wrapper {
-  width: 80%;
-  margin: 0 auto;
 }
