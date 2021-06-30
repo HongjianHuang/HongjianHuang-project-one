@@ -1,0 +1,111 @@
+//@import "variables";
+.contactHeader {
+    background-image: $contactHeader;
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    position: relative;
+}
+
+.contactHeader h1 {
+    font-size: 6.1em;
+    line-height: 125.6px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contactMain {
+    background: $deepTurquoise;
+}
+
+.contactMain .wrapper {
+    margin: 0 auto;
+}
+
+.contactContent,
+.mediaIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contactContent {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.mediaIcons {
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo p {
+    margin: 0;
+    padding: 0;
+}
+
+#contactEmail {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contactForm,
+.contactUserInput input,
+.contactForm textarea {
+    background: $frenchBlue;
+}
+
+.contactForm {
+    width: 100%;
+    padding: 50px;
+    box-shadow: 20px 20px $brightAqua;
+}
+
+.contactUserInput {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactUserInput input {
+    width: calc(50% - 5px);
+    border: none;
+    border-bottom: 2px solid $brightAqua;
+}
+
+.contactForm textarea {
+    border: 2px solid $brightAqua;
+}
+
+#contactLink::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 4px solid $brightAqua;
+}
+
+@media only screen and (max-width: 942px) {
+    .contactContent {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #contactEmail {
+        margin: 0;
+        padding: 0;
+    }
+    .contactInfo {
+        padding-top: 100px;
+    }
+    .contactHeader h1 {
+        font-size: 40px;
+    }
+}

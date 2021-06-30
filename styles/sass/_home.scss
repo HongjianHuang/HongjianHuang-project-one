@@ -1,4 +1,4 @@
-@import "variables";
+//@import "variables";
 a {
     text-decoration: none;
 }
@@ -9,6 +9,10 @@ a {
     background-position: center;
     height: 70vh;
     position: relative;
+}
+
+.homeHeader h1 {
+    font-size: 7.26em;
 }
 
 .homeHeader img {
@@ -106,36 +110,6 @@ a {
     margin-left: 80px;
 }
 
-// #home::before {
-//     content: $home;
-// }
-// #users::before {
-//     content: $users;
-// }
-// #blog::before {
-//     content: $file;
-// }
-// #phone::before {
-//     content: $phone;
-// }
-// #home::before,
-// #users::before,
-// #blog::before,
-// #phone::before {
-//     color: $darkishBlue;
-//     background: $brightAqua;
-//     position: absolute;
-//     display: inline-block;
-//     width: 50px;
-//     height: 50px;
-//     left: -60px;
-//     bottom: 0;
-//     border-radius: 100%;
-//     text-align: center;
-//     line-height: 100px;
-//     vertical-align: middle;
-//     padding: 1px;
-// }
 .intro {
     background-size: cover;
     background-position: center;
@@ -194,7 +168,7 @@ a {
 .events {
     margin-bottom: 0;
     margin-top: 0;
-    padding-bottom: 1px;
+    padding-bottom: 50px;
 }
 
 #banner {
@@ -218,4 +192,70 @@ a {
 
 .eventText h3 {
     margin-top: 0;
+}
+
+#homeLink::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 4px solid $brightAqua;
+}
+
+@media only screen and (max-width: 1450px) {
+    .homeHeader h1 {
+        font-size: 100px;
+    }
+    .homeHeader img {
+        width: 50%;
+    }
+    .eventImg img {
+        display: none
+    }
+    .eventText {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .homeHeader h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .homeHeader img {
+        display: none;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav li {
+        width: 100%;
+    }
+    #imgRight,
+    #imgLeft {
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+    }
+    .intro,
+    .intro .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .textLeft,
+    .textRight {
+        width: 100%;
+    }
+    .gallery ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery li {
+        width: 100%;
+    }
+    .gallery li:first-child {
+        margin-left: 0;
+    }
 }

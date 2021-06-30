@@ -1,47 +1,181 @@
-@import "variables.scss";
 .blogHeader {
     background-image: $blogHeader;
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    position: relative;
+}
+
+.blogHeader h1 {
+    font-size: 6.1em;
+    line-height: 125.6px;
+    margin-top: 50px;
 }
 
 .blogMain {
     background: $deepTurquoise;
     overflow: hidden;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 200px;
+    overflow: visible;
 }
 
 .blogMain .wrapper {
     position: relative;
 }
 
-.post {
-    margin-top: 300px;
-    float: right;
+.rightSection {
     display: flex;
+    float: right;
     flex-direction: column;
 }
 
+.rightSection,
+.post,
+.comments {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.rightSection {
+    top: -200px;
+    float: right;
+}
+
 #blogPostImage {
-    width: 60%;
-    position: absolute;
-    top: 200px;
-    z-index: 1;
     right: 0;
+    width: 100%;
     box-shadow: -10px 10px $brightAqua;
 }
 
 .postContent {
     position: relative;
     float: right;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px;
 }
 
-.postContent::after {
+.post::after {
     content: '';
     position: absolute;
-    top: -100px;
-    right: -200px;
-    bottom: -100px;
-    left: -62px;
+    top: 100px;
+    right: 0px;
+    bottom: 0px;
+    left: -10px;
+    border-left: 2px solid $brightAqua;
+    border-bottom: 2px solid $brightAqua;
+}
+
+.commentContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.commentImg {
+    float: left;
+    width: 100%;
+}
+
+.commentText {
+    float: right;
+}
+
+.mission {
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+}
+
+.missionText {
+    background: $frenchBlue;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 400px;
+    float: right;
+    box-shadow: 0 -500px $frenchBlue;
+}
+
+.mission img {
+    width: 90%;
+    position: relative;
+}
+
+.recentPosts a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px 10px;
+}
+
+.recentPosts li {
+    padding: 10px;
+}
+
+.recentPosts li::before {
+    content: "\2022";
+    color: $brightAqua;
+    font-weight: bold;
+    width: 1em;
+}
+
+.userInput {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userInput input,
+.blogForm textarea {
+    background-color: $deepTurquoise;
+}
+
+.userInput input {
+    width: calc(50% - 5px);
+    border: none;
+    border-bottom: 2px solid $brightAqua;
+}
+
+.blogForm textarea {
     border: 2px solid $brightAqua;
+}
+
+#blogLink::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 4px solid $brightAqua;
+}
+
+@media only screen and (max-width: 1230px) {
+    .blogMain {
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .blogMain {
+        flex-direction: column;
+    }
+    .mission img,
+    .missionText {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 614px) {
+    .rightSection,
+    .comments {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
 }

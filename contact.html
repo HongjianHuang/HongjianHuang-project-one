@@ -4,47 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Hongjian's Fun Place</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800|Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="contactHeader">
         <div class="wrapper">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a>About</a></li>
+                    <li><a href="">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a>Contact</a></li>
+                    <li id="contactLink"><a>Contact</a></li>
                 </ul>
             </nav>
-            <h1>G<span>ET IN</span>T<span>ouch</span></h1>
-            <img src="" alt="">
+            <h1>G<span>ET IN</span> T<span>ouch</span></h1>
         </div>
     </header>
-    <main>
-        <div class="userInput wrapper clearfix">
-            <form action="">
-                <input type="text" placeholder="Name">
-                <input type="emial" placeholder="Emial">
-                <textarea name="specialInstructions" id="specialInstructions" cols="30" rows="10" placeholder="Special instructions"></textarea>
-                <button type="submit">Button type submit</button>
+    <main class="contactMain">
+        <div class="contactContent wrapper clearfix">
+            <div class="contactInfo wrapper clearfix ">
+                <div class="mediaIcons ">
+                    <i class="fa fa-facebook-square " aria-hidden="true "></i>
+                    <i class="fa fa-instagram " aria-hidden="true "></i>
+                    <i class="fa fa-twitter " aria-hidden="true "></i>
+                    <i class="fa fa-whatsapp " aria-hidden="true "></i>
+                </div>
+                <p id="contactEmail">info@emial.com</p>
+                <p>123-456-7890</p>
+                <p>123 Queen Street West, Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
+            </div>
+
+            <form class="contactForm" action=" ">
+                <div class="contactUserInput">
+                    <label for="text">Name</label>
+                    <input type="text " placeholder="Name">
+                    <label for="email">Email</label>
+                    <input type="emial " placeholder="Email">
+                </div>
+                <textarea name="specialInstructions " id="specialInstructions " cols="30 " rows="10 " placeholder="Special instructions "></textarea>
+                <button type="submit ">S<span>UBMIT</span></button>
             </form>
         </div>
-        <div class="contactInfo wrapper clearfix">
-            <ul>
-                <li><img src="" alt="faceBook"></li>
-                <li><img src="" alt="instergram"></li>
-                <li><img src="" alt="twitter"></li>
-                <li><img src="" alt="telephone"></li>
-            </ul>
-            <p>info@emial.com</p>
-            <p>123-456-7890</p>
-            <p>123 Queen Street West, Unit 10</p>
-            <p>Toronto, Ontario</p>
-            <p>M5V2D5</p>
-        </div>
+
+
     </main>
     <footer>
         <p>Copyright © 2019 HackerYou</p>

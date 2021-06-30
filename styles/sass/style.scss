@@ -3,15 +3,23 @@
 @import "home";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import "blog";
+@import "contact";
 body {
     color: white;
     font-size: 20px;
     font-family: 'Walter Turncoat', cursive;
 }
 
+header nav {
+    font-family: 'Roboto', sans-serif;
+    line-height: 29px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
 .wrapper {
     width: 80%;
-    margin: 100px auto;
+    margin: auto 100px;
 }
 
 span {
@@ -20,6 +28,23 @@ span {
 
 p {
     margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.date {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.title {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 2rem;
+    margin: 0;
 }
 
 header .wrapper {
@@ -46,7 +71,6 @@ img {
 
 h1 {
     margin: 0;
-    font-size: 7.26rem;
     width: 400px;
     font-weight: 400;
     float: left;
@@ -66,12 +90,48 @@ nav {
 
 nav li {
     display: inline-block;
+    border-bottom: 0 solid $brightAqua;
+}
+
+nav li::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    border-bottom: 4px solid $brightAqua;
+    transition: 0.2s;
+}
+
+nav li:hover::after {
+    width: 100%;
 }
 
 nav a {
     color: white;
     padding: 10px 30px;
     text-decoration: none;
+    outline: none;
+}
+
+button {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 1.27rem;
+    background-color: $brightAqua;
+    color: $darkishBlue;
+    margin-top: 50px;
+    border: none;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+button:hover,
+button:focus {
+    background-color: $darkishBlue;
+    color: $brightAqua;
+}
+
+input {
+    border: none;
 }
 
 footer {
@@ -83,4 +143,24 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+@media only screen and (max-width: 614px) {
+    .wrapper {
+        margin: 0;
+        width: 100%;
+    }
 }
