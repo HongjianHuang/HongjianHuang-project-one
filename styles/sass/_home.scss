@@ -7,7 +7,7 @@ a {
     background-image: $homeHeader;
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -198,7 +198,6 @@ a {
     content: "";
     display: block;
     margin: 0 auto;
-    width: 100%;
     border-bottom: 4px solid $brightAqua;
 }
 

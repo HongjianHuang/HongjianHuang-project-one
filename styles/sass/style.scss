@@ -4,6 +4,15 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import "blog";
 @import "contact";
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
     color: white;
     font-size: 20px;
@@ -85,15 +94,36 @@ h4 {
 }
 
 nav {
-    float: left;
+    position: relative;
 }
 
-nav li {
+nav ul {
+    position: absolute;
+}
+
+nav .menu {
+    display: flex;
+    flex-direction: row;
+}
+
+nav .menuButton {
+    display: none;
+}
+
+nav .menuIcon {
+    padding: 28xp 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+nav a {
     display: inline-block;
     border-bottom: 0 solid $brightAqua;
 }
 
-nav li::after {
+nav a::after {
     content: "";
     display: block;
     margin: 0 auto;
@@ -102,7 +132,8 @@ nav li::after {
     transition: 0.2s;
 }
 
-nav li:hover::after {
+nav a:hover::after,
+nav a:focus::after {
     width: 100%;
 }
 
@@ -162,5 +193,28 @@ label {
     .wrapper {
         margin: 0;
         width: 90%;
+    }
+    nav .menuIcon {
+        display: block;
+    }
+    nav .menu {
+        visibility: hidden;
+        margin-top: 20px;
+        width: 100%;
+    }
+    nav .menu li {
+        align-items: center;
+    }
+    nav .menu a {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    // nav {
+    //     align-items: center;
+    // }
+    nav .menuButton:checked~.menu {
+        visibility: initial;
+        flex-direction: column;
     }
 }
