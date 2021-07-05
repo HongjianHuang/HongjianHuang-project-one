@@ -204,7 +204,7 @@ label {
         flex-direction: column;
         display: none;
     }
-    nav ul{
+    nav ul {
         max-height: 0;
     }
     nav .menu li {
@@ -214,10 +214,25 @@ label {
         width: 100%;
         text-align: center;
         align-items: center;
-        padding-top:50px;
-        padding-bottom: 50px;
     }
     nav .menuButton:checked~.menu {
         display: flex;
+    }
+    .blogHeader h1,
+    .contactHeader h1,
+    .homeHeader h1 {
+        font-size: 40px;
+        position: absolute;
+        top: -50px;
+        width: 80%;
+    }
+    .rightSection,
+    .comments {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .rightSection img {
+        position: relative;
     }
 }

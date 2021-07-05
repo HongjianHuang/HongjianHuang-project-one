@@ -7,7 +7,7 @@ a {
     background-image: $homeHeader;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 150vh;
     position: relative;
 }
 
@@ -205,27 +205,18 @@ a {
 @media only screen and (max-width: 1450px) {
     .homeHeader h1 {
         font-size: 100px;
+        position: absolute;
+        top: -50px;
     }
     .homeHeader img {
-        width: 50%;
+        display: none;
     }
-    .eventImg img {
-        display: none
+    .eventImg {
+        display: none;
     }
     .eventText {
         width: 100%;
         text-align: center;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .homeHeader h1{
-        font-size: 50px;
-        position: absolute;
-        top:-50px;
-    }
-    .homeHeader img {
-        display: none;
     }
     .nav ul {
         display: flex;
@@ -258,5 +249,8 @@ a {
     }
     .gallery li:first-child {
         margin-left: 0;
+    }
+    .homeHeader {
+        height: 100vh;
     }
 }

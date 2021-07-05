@@ -108,7 +108,8 @@
 .recentPosts a {
     color: white;
     font-family: 'Roboto', sans-serif;
-    padding: 30px 10px;
+    padding: 10px 10px;
+    transition: 0.2s;
 }
 
 .recentPosts li {
@@ -120,6 +121,12 @@
     color: $brightAqua;
     font-weight: bold;
     width: 1em;
+}
+
+.recentPosts a:hover,
+.recentPosts a:focus {
+    background: $brightAqua;
+    color: $darkishBlue;
 }
 
 .userInput {
@@ -168,22 +175,18 @@
     .mission img,
     .missionText {
         width: 100%;
+        margin: 0;
     }
-}
-
-@media only screen and (max-width: 614px) {
-    .rightSection,
-    .comments {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
+    #blogPostImage {
+        box-shadow: none;
     }
-    .rightSection img{
+    .post,
+    .postContent {
         position: relative;
+        width: 100%;
+        margin: 0;
     }
-    .blogHeader h1{
-        font-size: 50px;
-        position: absolute;
-        top:-50px;
+    .blogMain {
+        gap: 150px;
     }
 }

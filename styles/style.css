@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
   line-height: 1.15;
@@ -20,7 +21,7 @@ section {
 
 h1 {
   font-size: 2em;
-  margin: .67em 0;
+  margin: 0.67em 0;
 }
 
 figcaption,
@@ -96,11 +97,11 @@ sup {
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 audio,
@@ -165,7 +166,7 @@ button:-moz-focusring,
 }
 
 fieldset {
-  padding: .35em .75em .625em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 legend {
@@ -239,7 +240,7 @@ template {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: '';
+  content: "";
   clear: both;
   height: 0;
 }
@@ -278,7 +279,7 @@ a {
   background-image: url("../funplaceAssets/homeHeader.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 150vh;
   position: relative;
 }
 
@@ -487,28 +488,23 @@ a {
 @media only screen and (max-width: 1450px) {
   .homeHeader h1 {
     font-size: 100px;
+    position: absolute;
+    top: -50px;
   }
+
   .homeHeader img {
-    width: 50%;
-  }
-  .eventImg img {
     display: none;
   }
+
+  .eventImg {
+    display: none;
+  }
+
   .eventText {
     width: 100%;
     text-align: center;
   }
-}
 
-@media only screen and (max-width: 1000px) {
-  .homeHeader h1 {
-    font-size: 50px;
-    position: absolute;
-    top: -50px;
-  }
-  .homeHeader img {
-    display: none;
-  }
   .nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -518,18 +514,21 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
   .nav li {
     width: 100%;
   }
+
   #imgRight,
-  #imgLeft {
+#imgLeft {
     position: relative;
     width: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+
   .intro,
-  .intro .wrapper {
+.intro .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -538,10 +537,12 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
   .textLeft,
-  .textRight {
+.textRight {
     width: 100%;
   }
+
   .gallery ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -551,14 +552,19 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
   .gallery li {
     width: 100%;
   }
+
   .gallery li:first-child {
     margin-left: 0;
   }
-}
 
+  .homeHeader {
+    height: 100vh;
+  }
+}
 .blogHeader {
   background-image: url("../funplaceAssets/blogHeader.jpg");
   background-size: cover;
@@ -642,7 +648,7 @@ a {
 }
 
 .post::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 100px;
   right: 0px;
@@ -697,8 +703,10 @@ a {
 
 .recentPosts a {
   color: white;
-  font-family: 'Roboto', sans-serif;
-  padding: 30px 10px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .recentPosts li {
@@ -706,10 +714,16 @@ a {
 }
 
 .recentPosts li::before {
-  content: "\2022";
+  content: "•";
   color: #08FDED;
   font-weight: bold;
   width: 1em;
+}
+
+.recentPosts a:hover,
+.recentPosts a:focus {
+  background: #08FDED;
+  color: #044779;
 }
 
 .userInput {
@@ -760,7 +774,6 @@ a {
     gap: 0;
   }
 }
-
 @media only screen and (max-width: 1025px) {
   .blogMain {
     -webkit-box-orient: vertical;
@@ -768,31 +781,29 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
   .mission img,
-  .missionText {
+.missionText {
     width: 100%;
+    margin: 0;
   }
-}
 
-@media only screen and (max-width: 614px) {
-  .rightSection,
-  .comments {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
+  #blogPostImage {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
-  .rightSection img {
+
+  .post,
+.postContent {
     position: relative;
+    width: 100%;
+    margin: 0;
   }
-  .blogHeader h1 {
-    font-size: 50px;
-    position: absolute;
-    top: -50px;
+
+  .blogMain {
+    gap: 150px;
   }
 }
-
 .contactHeader {
   background-image: url("../funplaceAssets/contactHeader.jpg");
   background-size: cover;
@@ -920,20 +931,20 @@ a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+
   #contactEmail {
     margin: 0;
     padding: 0;
   }
+
   .contactInfo {
     padding-top: 100px;
   }
+
   .contactHeader h1 {
-    font-size: 50px;
-    position: absolute;
-    top: -50px;
+    font-size: 90px;
   }
 }
-
 html,
 body {
   width: 100%;
@@ -946,11 +957,11 @@ body {
 body {
   color: white;
   font-size: 20px;
-  font-family: 'Walter Turncoat', cursive;
+  font-family: "Walter Turncoat", cursive;
 }
 
 header nav {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 29px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -967,21 +978,21 @@ span {
 
 p {
   margin-bottom: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 1px;
 }
 
 .date {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin-bottom: 0;
   font-style: italic;
 }
 
 .title {
-  font-family: 'Walter Turncoat', cursive;
+  font-family: "Walter Turncoat", cursive;
   font-size: 2rem;
   margin: 0;
 }
@@ -1087,7 +1098,7 @@ nav a {
 }
 
 button {
-  font-family: 'Walter Turncoat', cursive;
+  font-family: "Walter Turncoat", cursive;
   font-size: 1.27rem;
   background-color: #08FDED;
   color: #044779;
@@ -1137,6 +1148,10 @@ label {
   color: white;
 }
 
+::-moz-placeholder {
+  color: white;
+}
+
 :-ms-input-placeholder {
   color: white;
 }
@@ -1154,9 +1169,11 @@ label {
     margin: 0;
     width: 90%;
   }
+
   nav .menuIcon {
     display: block;
   }
+
   nav .menu {
     margin-top: 50px;
     width: 100%;
@@ -1166,26 +1183,50 @@ label {
             flex-direction: column;
     display: none;
   }
+
   nav ul {
     max-height: 0;
   }
+
   nav .menu li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+
   nav .menu a {
     width: 100%;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
+
   nav .menuButton:checked ~ .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .blogHeader h1,
+.contactHeader h1,
+.homeHeader h1 {
+    font-size: 40px;
+    position: absolute;
+    top: -50px;
+    width: 80%;
+  }
+
+  .rightSection,
+.comments {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+
+  .rightSection img {
+    position: relative;
   }
 }
