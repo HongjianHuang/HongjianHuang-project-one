@@ -12,20 +12,15 @@ a {
 }
 
 .homeHeader h1 {
+    margin-top: 500px;
     font-size: 7.26em;
+    line-height: 125.6px;
 }
 
 .homeHeader img {
     position: absolute;
     right: 0;
     bottom: -200px;
-}
-
-.homeHeader h1 {
-    float: left;
-    height: 80%;
-    display: flex;
-    align-items: flex-end;
 }
 
 .gallery,
@@ -159,8 +154,13 @@ a {
     padding: 10px 30px;
     text-decoration: none;
     color: $darkishBlue;
+    transition: .2s;
 }
 
+// .readMore:hover {
+//     background: $darkishBlue;
+//     color: $brightAqua;
+// }
 .roadTrips {
     text-align: center;
 }
@@ -169,6 +169,11 @@ a {
     margin-bottom: 0;
     margin-top: 0;
     padding-bottom: 50px;
+    align-items: center;
+}
+
+.events .wrapper {
+    margin: 100px auto;
 }
 
 #banner {
@@ -204,9 +209,8 @@ a {
 
 @media only screen and (max-width: 1450px) {
     .homeHeader h1 {
+        margin-top: 50px;
         font-size: 100px;
-        position: absolute;
-        top: -50px;
     }
     .homeHeader img {
         display: none;

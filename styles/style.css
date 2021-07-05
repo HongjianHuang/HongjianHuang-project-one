@@ -284,24 +284,15 @@ a {
 }
 
 .homeHeader h1 {
+  margin-top: 500px;
   font-size: 7.26em;
+  line-height: 125.6px;
 }
 
 .homeHeader img {
   position: absolute;
   right: 0;
   bottom: -200px;
-}
-
-.homeHeader h1 {
-  float: left;
-  height: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
 .gallery,
@@ -441,6 +432,8 @@ a {
   padding: 10px 30px;
   text-decoration: none;
   color: #044779;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .roadTrips {
@@ -451,6 +444,13 @@ a {
   margin-bottom: 0;
   margin-top: 0;
   padding-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.events .wrapper {
+  margin: 100px auto;
 }
 
 #banner {
@@ -487,9 +487,8 @@ a {
 
 @media only screen and (max-width: 1450px) {
   .homeHeader h1 {
+    margin-top: 50px;
     font-size: 100px;
-    position: absolute;
-    top: -50px;
   }
 
   .homeHeader img {
@@ -1109,6 +1108,8 @@ button {
   transition: 0.2s;
 }
 
+.readMore:hover,
+.readMore:focus,
 button:hover,
 button:focus {
   background-color: #044779;
@@ -1213,8 +1214,9 @@ label {
 .homeHeader h1 {
     font-size: 40px;
     position: absolute;
-    top: -50px;
+    top: -30px;
     width: 80%;
+    margin: 0;
   }
 
   .rightSection,

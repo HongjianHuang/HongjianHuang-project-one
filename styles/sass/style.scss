@@ -156,6 +156,8 @@ button {
     transition: 0.2s;
 }
 
+.readMore:hover,
+.readMore:focus,
 button:hover,
 button:focus {
     background-color: $darkishBlue;
@@ -223,8 +225,9 @@ label {
     .homeHeader h1 {
         font-size: 40px;
         position: absolute;
-        top: -50px;
+        top: -30px;
         width: 80%;
+        margin: 0;
     }
     .rightSection,
     .comments {
