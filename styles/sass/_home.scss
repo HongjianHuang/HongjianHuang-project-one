@@ -198,6 +198,7 @@ a {
     content: "";
     display: block;
     margin: 0 auto;
+    width: 100%;
     border-bottom: 4px solid $brightAqua;
 }
 
@@ -218,9 +219,10 @@ a {
 }
 
 @media only screen and (max-width: 1000px) {
-    .homeHeader h1 {
+    .homeHeader h1{
         font-size: 50px;
-        text-align: center;
+        position: absolute;
+        top:-50px;
     }
     .homeHeader img {
         display: none;

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
   line-height: 1.15;
@@ -21,7 +20,7 @@ section {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: .67em 0;
 }
 
 figcaption,
@@ -97,11 +96,11 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
 sup {
-  top: -0.5em;
+  top: -.5em;
 }
 
 audio,
@@ -166,7 +165,7 @@ button:-moz-focusring,
 }
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: .35em .75em .625em;
 }
 
 legend {
@@ -240,7 +239,7 @@ template {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: "";
+  content: '';
   clear: both;
   height: 0;
 }
@@ -481,6 +480,7 @@ a {
   content: "";
   display: block;
   margin: 0 auto;
+  width: 100%;
   border-bottom: 4px solid #08FDED;
 }
 
@@ -488,30 +488,27 @@ a {
   .homeHeader h1 {
     font-size: 100px;
   }
-
   .homeHeader img {
     width: 50%;
   }
-
   .eventImg img {
     display: none;
   }
-
   .eventText {
     width: 100%;
     text-align: center;
   }
 }
+
 @media only screen and (max-width: 1000px) {
   .homeHeader h1 {
     font-size: 50px;
-    text-align: center;
+    position: absolute;
+    top: -50px;
   }
-
   .homeHeader img {
     display: none;
   }
-
   .nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -521,21 +518,18 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .nav li {
     width: 100%;
   }
-
   #imgRight,
-#imgLeft {
+  #imgLeft {
     position: relative;
     width: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-
   .intro,
-.intro .wrapper {
+  .intro .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -544,12 +538,10 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .textLeft,
-.textRight {
+  .textRight {
     width: 100%;
   }
-
   .gallery ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -559,15 +551,14 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .gallery li {
     width: 100%;
   }
-
   .gallery li:first-child {
     margin-left: 0;
   }
 }
+
 .blogHeader {
   background-image: url("../funplaceAssets/blogHeader.jpg");
   background-size: cover;
@@ -651,7 +642,7 @@ a {
 }
 
 .post::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100px;
   right: 0px;
@@ -706,7 +697,7 @@ a {
 
 .recentPosts a {
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 30px 10px;
 }
 
@@ -715,7 +706,7 @@ a {
 }
 
 .recentPosts li::before {
-  content: "•";
+  content: "\2022";
   color: #08FDED;
   font-weight: bold;
   width: 1em;
@@ -769,6 +760,7 @@ a {
     gap: 0;
   }
 }
+
 @media only screen and (max-width: 1025px) {
   .blogMain {
     -webkit-box-orient: vertical;
@@ -776,22 +768,31 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .mission img,
-.missionText {
+  .missionText {
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 614px) {
   .rightSection,
-.comments {
+  .comments {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 100%;
   }
+  .rightSection img {
+    position: relative;
+  }
+  .blogHeader h1 {
+    font-size: 50px;
+    position: absolute;
+    top: -50px;
+  }
 }
+
 .contactHeader {
   background-image: url("../funplaceAssets/contactHeader.jpg");
   background-size: cover;
@@ -919,20 +920,20 @@ a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-
   #contactEmail {
     margin: 0;
     padding: 0;
   }
-
   .contactInfo {
     padding-top: 100px;
   }
-
   .contactHeader h1 {
-    font-size: 40px;
+    font-size: 50px;
+    position: absolute;
+    top: -50px;
   }
 }
+
 html,
 body {
   width: 100%;
@@ -945,11 +946,11 @@ body {
 body {
   color: white;
   font-size: 20px;
-  font-family: "Walter Turncoat", cursive;
+  font-family: 'Walter Turncoat', cursive;
 }
 
 header nav {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 29px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -966,21 +967,21 @@ span {
 
 p {
   margin-bottom: 50px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 1px;
 }
 
 .date {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-bottom: 0;
   font-style: italic;
 }
 
 .title {
-  font-family: "Walter Turncoat", cursive;
+  font-family: 'Walter Turncoat', cursive;
   font-size: 2rem;
   margin: 0;
 }
@@ -1051,6 +1052,7 @@ nav .menuButton {
 
 nav .menuIcon {
   padding: 28xp 20px;
+  font-size: 50px;
   position: relative;
   float: right;
   cursor: pointer;
@@ -1085,7 +1087,7 @@ nav a {
 }
 
 button {
-  font-family: "Walter Turncoat", cursive;
+  font-family: 'Walter Turncoat', cursive;
   font-size: 1.27rem;
   background-color: #08FDED;
   color: #044779;
@@ -1135,10 +1137,6 @@ label {
   color: white;
 }
 
-::-moz-placeholder {
-  color: white;
-}
-
 :-ms-input-placeholder {
   color: white;
 }
@@ -1156,36 +1154,38 @@ label {
     margin: 0;
     width: 90%;
   }
-
   nav .menuIcon {
     display: block;
   }
-
   nav .menu {
-    visibility: hidden;
-    margin-top: 20px;
+    margin-top: 50px;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
   }
-
+  nav ul {
+    max-height: 0;
+  }
   nav .menu li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-
   nav .menu a {
     width: 100%;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-
   nav .menuButton:checked ~ .menu {
-    visibility: initial;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }

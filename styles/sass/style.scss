@@ -112,6 +112,7 @@ nav .menuButton {
 
 nav .menuIcon {
     padding: 28xp 20px;
+    font-size: 50px;
     position: relative;
     float: right;
     cursor: pointer;
@@ -198,9 +199,13 @@ label {
         display: block;
     }
     nav .menu {
-        visibility: hidden;
-        margin-top: 20px;
+        margin-top: 50px;
         width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+    nav ul{
+        max-height: 0;
     }
     nav .menu li {
         align-items: center;
@@ -209,12 +214,10 @@ label {
         width: 100%;
         text-align: center;
         align-items: center;
+        padding-top:50px;
+        padding-bottom: 50px;
     }
-    // nav {
-    //     align-items: center;
-    // }
     nav .menuButton:checked~.menu {
-        visibility: initial;
-        flex-direction: column;
+        display: flex;
     }
 }

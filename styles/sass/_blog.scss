@@ -178,4 +178,12 @@
         justify-content: space-around;
         width: 100%;
     }
+    .rightSection img{
+        position: relative;
+    }
+    .blogHeader h1{
+        font-size: 50px;
+        position: absolute;
+        top:-50px;
+    }
 }
