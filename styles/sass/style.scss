@@ -217,9 +217,9 @@ label {
         text-align: center;
         align-items: center;
     }
-    nav .menuButton:checked~.menu {
-        display: flex;
-    }
+    // nav .menuButton:checked~.menu {
+    //     display: flex;
+    // }
     .blogHeader h1,
     .contactHeader h1,
     .homeHeader h1 {

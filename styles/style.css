@@ -1203,12 +1203,6 @@ label {
             align-items: center;
   }
 
-  nav .menuButton:checked ~ .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
   .blogHeader h1,
 .contactHeader h1,
 .homeHeader h1 {
